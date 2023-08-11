@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,20 +10,21 @@
   <script src="js/scripts.js"></script>
   <title>Programming Language Suggester V.2</title>
 </head>
+
 <body>
-  
+
   <div class="container">
 
     <h1>Programming Language Suggester V.2</h1>
     <h2>Take this survey to find the best language to start your coding journey!</h2>
 
     <form id="survey">
-      <div class="question1">
-        <h2>Why do you want to learn programming</h2>
+      <div class="main-question">
+        <h3>Why do you want to learn programming?</h3>
         <div class="radio">
           <label>
             <input type="radio" name="reason" value="unknown">
-            I don't know. Please pick one for me!
+            I don't know. Please pick a coding language for me
           </label>
         </div>
         <div class="radio">
@@ -38,11 +40,88 @@
           </label>
         </div>
       </div>
-      
+
+      <div class="direction">
+        <h3>Do you already have a brilliant idea or platform in mind? </h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="response" value="yes">
+            Yes
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="response" value="no">
+            No
+          </label>
+        </div>
+      </div>
+
+      <div class="platform">
+        <h3>Which platform or field are you interested in?</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="platform" value="web">
+            Web
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="platform" value="game">
+            3D/Gaming
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="platform" value="mobile">
+            Mobile
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="platform" value="company">
+            I just want to work for big tech companies
+          </label>
+        </div>
+      </div>
+
+      <div class="mobile">
+        <h3>Which mobile operating system are you interested in?</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="os" value="iOS">
+            iOS
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="os" value="android">
+            Android
+          </label>
+        </div>
+      </div>
+
+      <div class="web">
+        <h3>Are you more interested in front-end (web interface) or back-end ("brain" behind a website)? </h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="tendency" value="front">
+            Front-end
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="tendency" value="back">
+            Back-end
+          </label>
+        </div>
+      </div>
+
       
     </form>
 
   </div>
 
 </body>
+
 </html>
