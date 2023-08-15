@@ -20,186 +20,186 @@
 
     <button id="start" type="submit" class="btn btn-success">Start Survey</button>
 
-    <form id="survey">
-      <div class="main-question hide">
-        <h3>Why do you want to learn programming?</h3>
-        <div class="radio">
-          <label>
-            <input type="radio" name="reason" value="unknown" checked>
-            I don't know. Please pick a coding language for me
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="reason" value="interest">
-            Just for fun/Interested/Self-improvement
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="reason" value="money">
-            To make money
-          </label>
-        </div>
-        <button id="next" type="submit" class="btn btn-primary">Next</button>
+    <form id="reason" class="hide">
+
+      <h3>Why do you want to learn programming?</h3>
+      <div class="radio">
+        <label>
+          <input type="radio" name="reason" value="unknown" checked>
+          I don't know. Please pick a coding language for me
+        </label>
       </div>
-
-
-
-      <div class="direction hide">
-        <h3>Do you already have a brilliant idea or platform in mind? </h3>
-        <div class="radio">
-          <label>
-            <input type="radio" name="response" value="yes" checked>
-            Yes
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="response" value="no">
-            No
-          </label>
-        </div>
-        <button id="next" type="submit" class="btn btn-primary">Next</button>
+      <div class="radio">
+        <label>
+          <input type="radio" name="reason" value="interest">
+          Just for fun/Interested/Self-improvement
+        </label>
       </div>
-
-      
-
-      <div class="learn hide">
-        <h3>How do you like to learn things?</h3>
-        <div class="radio">
-          <label>
-            <input type="radio" name="way" value="easy" checked>
-            The easy way
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="way" value="hard">
-            The slightly harder way
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="way" value="harder">
-            The really hard way
-          </label>
-        </div>
-        <button id="next" type="submit" class="btn btn-primary">Next</button>
+      <div class="radio">
+        <label>
+          <input type="radio" name="reason" value="money">
+          To make money
+        </label>
       </div>
-
-      <div class="car hide">
-        <h3>Do you prefer auto or manual car?</h3>
-        <div class="radio">
-          <label>
-            <input type="radio" name="car" value="auto" checked>
-            Auto
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="car" value="manual">
-            Manual
-          </label>
-        </div>
-        <button id="next" type="submit" class="btn btn-primary">Next</button>
-      </div>
-
-      <div class="platform hide">
-        <h3>Which platform or field are you interested in?</h3>
-        <div class="radio">
-          <label>
-            <input type="radio" name="platform" value="web" checked>
-            Web
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="platform" value="game">
-            3D/Gaming
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="platform" value="mobile">
-            Mobile
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="platform" value="company">
-            I just want to work for big tech companies
-          </label>
-        </div>
-        <button id="next" type="submit" class="btn btn-primary">Next</button>
-      </div>
-
-      <div class="mobile hide">
-        <h3>Which mobile operating system are you interested in?</h3>
-        <div class="radio">
-          <label>
-            <input type="radio" name="os" value="iOS" checked>
-            iOS
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="os" value="android">
-            Android
-          </label>
-        </div>
-        <button id="next" type="submit" class="btn btn-primary">Next</button>
-      </div>
-
-      <div class="web hide">
-        <h3>Are you more interested in front-end (web interface) or back-end ("brain" behind a website)? </h3>
-        <div class="radio">
-          <label>
-            <input type="radio" name="tendency" value="front" checked>
-            Front-end
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="tendency" value="back">
-            Back-end
-          </label>
-        </div>
-        <button id="next" type="submit" class="btn btn-primary">Next</button>
-      </div>
-
-      <div class="enterprise hide">
-        <h3>Which company would you like to work for?</h3>
-        <div class="radio">
-          <label>
-            <input type="radio" name="company" value="apple" checked>
-            Apple
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="company" value="microsoft">
-            Microsoft
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="company" value="google">
-            Google
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="company" value="meta">
-            Meta
-          </label>
-        </div>
-        <button id="next" type="submit" class="btn btn-primary">Next</button>
-      </div>
-
+      <button id="next" type="submit" class="btn btn-primary">Next</button>
     </form>
 
+
+
+    <form id="direction" class="hide">
+      <h3>Do you already have a brilliant idea or platform in mind? </h3>
+      <div class="radio">
+        <label>
+          <input type="radio" name="response" value="yes" checked>
+          Yes
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="response" value="no">
+          No
+        </label>
+      </div>
+      <button id="next" type="submit" class="btn btn-primary">Next</button>
+    </form>
+
+
+
+    <form id="learn" class="hide">
+      <h3>How do you like to learn things?</h3>
+      <div class="radio">
+        <label>
+          <input type="radio" name="way" value="easy" checked>
+          The easy way
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="way" value="hard">
+          The slightly harder way
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="way" value="harder">
+          The really hard way
+        </label>
+      </div>
+      <button id="next" type="submit" class="btn btn-primary">Next</button>
+    </form>
+
+    <form id="car" class="hide">
+      <h3>Do you prefer auto or manual car?</h3>
+      <div class="radio">
+        <label>
+          <input type="radio" name="car" value="auto" checked>
+          Auto
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="car" value="manual">
+          Manual
+        </label>
+      </div>
+      <button id="next" type="submit" class="btn btn-primary">Next</button>
+    </form>
+
+    <form id="platform" class="hide">
+      <h3>Which platform or field are you interested in?</h3>
+      <div class="radio">
+        <label>
+          <input type="radio" name="platform" value="web" checked>
+          Web
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="platform" value="game">
+          3D/Gaming
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="platform" value="mobile">
+          Mobile
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="platform" value="company">
+          I just want to work for big tech companies
+        </label>
+      </div>
+      <button id="next" type="submit" class="btn btn-primary">Next</button>
+    </form>
+
+    <form id="mobile" class="hide">
+      <h3>Which mobile operating system are you interested in?</h3>
+      <div class="radio">
+        <label>
+          <input type="radio" name="os" value="iOS" checked>
+          iOS
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="os" value="android">
+          Android
+        </label>
+      </div>
+      <button id="next" type="submit" class="btn btn-primary">Next</button>
+    </form>
+
+    <form id="web" class="hide">
+      <h3>Are you more interested in front-end (web interface) or back-end ("brain" behind a website)? </h3>
+      <div class="radio">
+        <label>
+          <input type="radio" name="tendency" value="front" checked>
+          Front-end
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="tendency" value="back">
+          Back-end
+        </label>
+      </div>
+      <button id="next" type="submit" class="btn btn-primary">Next</button>
+    </form>
+
+    <form id="enterprise" class="hide">
+      <h3>Which company would you like to work for?</h3>
+      <div class="radio">
+        <label>
+          <input type="radio" name="company" value="apple" checked>
+          Apple
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="company" value="microsoft">
+          Microsoft
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="company" value="google">
+          Google
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="company" value="meta">
+          Meta
+        </label>
+      </div>
+      <button id="next" type="submit" class="btn btn-primary">Next</button>
+
+    </form>
+    <div id="result" class="hide">RESULT WILL SHOW HERE</div>
   </div>
+
 
 </body>
 
